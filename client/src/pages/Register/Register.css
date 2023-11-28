@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.register {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register > form {
+  font-size: 14px;
+  width: 500px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid rgb(239, 239, 239);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  margin:20px 0;
+}
+
+.register > form > h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  color:  #ff5a5f;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.register > form > label {
+  
+  font-size: 12px;
+  margin-right: auto;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+
+.register > form > .password-input >div > label ,  .register > form > .name-input >div> label{
+  font-size: 12px;
+  margin-right: auto;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+
+.password-input , .name-input{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.password-input >div, .name-input>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 48%;
+}
+.register > form > .password-input > div >input,  .register > form > .name-input > div >input{
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: #727272;
+
+}
+
+
+.register > form > input {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: #727272;
+}
+
+.password-input , .name-input{
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+
+}
+
+
+
+.register > form .roles {
+  margin-right: auto;
+  margin-left: 50px;
+}
+
+
+.register > form > button {
+  width: 100%;
+  padding: 10px;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff5a5f;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register > form > button:hover {
+  background-color: #ff767e;
+}
+
+.register > form > span {
+  font-size: 12px;
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.register > form > span > a {
+  color: #ff5a5f;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.register > form > span > a:hover {
+  color: #ff767e;
+}
+
+
+
+.roles p {
+  margin-bottom: 10px;
+}
+
+.roles input[type="checkbox"] {
+  display: none; 
+}
+
+.roles label {
+  position: relative;
+  padding-left: 28px; 
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  color: #000000;
+}
+
+.roles label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ff767e;
+  border-radius: 50%; 
+  background-color: #fff;
+}
+
+.roles input[type="checkbox"]:checked + label:before {
+  background-color: #ff767e;
+  border-color: #ff767e;
+}
+
+.roles label:hover:before {
+  border-color: #ff767e;
+}

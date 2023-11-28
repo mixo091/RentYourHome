@@ -1,0 +1,114 @@
+/* Main container for the properties */
+.featured {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Flex container for the properties */
+.fp {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 10px;
+  gap: 2rem;  /* spacing between grid items */
+  justify-content: center;
+}
+
+/* Individual property card styling */
+.fpItem {
+  background-color: #fff;
+  width: calc(25% - 2rem);  /* 3 cards in a row subtracting gaps */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;  /* Smooth transition */
+  border:none;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;  /* For child absolute positioning */
+}
+
+.fpItem:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+  
+}
+
+.fpImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Cover the container without distorting the image */
+  border-radius:8px;
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fpLocation {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fpDesc {
+  font-size: 12px;
+  color: #777;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fpPrice {
+  font-weight: bold;
+  color: #000000;
+  font-size: 14px;
+}
+
+.PerNight{
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fpRating > button{
+  background-color: #fff;
+  border-radius: 8px;
+  padding:3px;
+  border:0.2px solid rgb(210, 208, 208);
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.card__btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FF5A5F;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card__btn:hover {
+  background-color: #E73550;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .fpItem {
+      width: calc(50% - 2rem);  /* 2 cards in a row */
+  }
+}
+
+@media (max-width: 768px) {
+  .fpItem {
+      width: 100%;  /* 1 card in a row */
+  }
+}

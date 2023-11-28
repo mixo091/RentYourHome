@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+.footer-container {
+    background-color: #222831;
+    color: #eeeeee;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    height: 120px; 
+    width: 100%;
+    padding: 10px;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3, .footer-section h4 {
+    margin-bottom: 0.5em;
+    color:  #ff767e;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-section p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-family: 'Nunito', sans-serif;
+}

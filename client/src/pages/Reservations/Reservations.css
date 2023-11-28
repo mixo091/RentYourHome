@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.Reservations{
+    margin-top: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color:inherit;
+    
+}
+.listingsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.page-title{
+    color: #000000;
+    margin-left: 60px;
+}
+
+
+.listingCard {
+    background-color:inherit;
+    border:#444;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listingCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.listingCard h3 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.Title{
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+.listingCard p {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.listingCard button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff5a5f;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.listingCard button:hover {
+    background-color: #ff767e;
+}
+
+.roles p {
+    margin-bottom: 10px;
+}
+
+.roles input[type="checkbox"] {
+    display: none;
+}
+
+.roles label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.roles label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ff767e;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.roles input[type="checkbox"]:checked + label:before {
+    background-color: #ff767e;
+    border-color: #ff767e;
+}
+
+.roles label:hover:before {
+    border-color: #ff767e;
+}
+
+.circle {
+    width: 5px;
+    display: inline-block;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000000;  /* Change this to any color you want */
+}
+
+.allowances{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.spaces{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.allowances > div {
+    padding-left: 20px;
+}
+
+hr {
+    border: none;             /* Removes the default border */
+    height: 0.5px;              /* Specifies the thickness of the line */
+    background-color: #918f8f;  /* Color of the line */
+    width: 100%;              /* Adjust width as desired */
+    margin: 10px auto;       /* Centers the line and gives space above and below */
+}
+
+.area{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+
+}
+.accommodations{
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+.spaces > p {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.area > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.area > div > p{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.desc{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    height:100px;
+    padding:10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
